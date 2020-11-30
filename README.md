@@ -1,5 +1,8 @@
 # autostock
-주식을 만드세요
+주식을 만듭시다
+
+#설치
+pip install autostock
 
 ## 사용법
 example 폴더를 보세요
