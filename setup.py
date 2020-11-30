@@ -1,7 +1,17 @@
 from os import environ
 from setuptools import setup, find_packages
 from stock import __version__ as version
+import re
+import os
 
+with open("autostock/__init__.py", encoding="UTF8") as f:
+    version = re.search(
+        r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE
+    ).group(1)
+path = = os.path.dirname(os.path.realpath(__file__)).replace("\\", "/")
+with open(f"{path}/requirements.txt", encoding="UTF8") as f:
+    requirements = f.read().splitlines()
+    
 setup(
     name = 'autostock',
     version = version,
