@@ -2,3 +2,4 @@ dbjson
 random
 asyncio
 io
+matplotlib
