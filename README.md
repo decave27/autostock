@@ -1,7 +1,7 @@
 # autostock
 주식을 만듭시다
 
-#설치
+# 설치
 pip install autostock
 
 ## 사용법
